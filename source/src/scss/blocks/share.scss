@@ -1,0 +1,91 @@
+@import "globals/vars.scss";
+
+$root: ".share";
+
+#{$root} {
+  padding-top: 44px;
+  background-color: $background-grey;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+
+  &__card {
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    border: none;
+    padding-top: 18px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+
+    @media (max-width: 1130px) {
+      gap: 10px;
+    }
+
+    @media (max-width: 1000px) {
+      width: 509px;
+      margin: auto;
+      height: 164px;
+    }
+
+    @media (max-width: 700px) {
+      width: 300px;
+      height: 100px;
+    }
+  }
+
+  &__image {
+    @media (max-width: 1130px) {
+      width: 100%;
+    }
+
+    @media (max-width: 1000px) {
+      width: 244px;
+    }
+
+    @media (max-width: 700px) {
+      width: 100px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+
+  &__subText {
+    color: $primary-orange;
+    font-size: 16px;
+    font-style: italic;
+  }
+
+  &__container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 48px;
+
+    @media (max-width: 1130px) {
+      gap: 20px;
+    }
+  }
+}
+
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    background-color: $primary-orange;
+  }
+}
+
+.slider {
+  padding-top: 25px;
+  order: 2;
+  @media (min-width: 1000px) {
+    display: none;
+  }
+}

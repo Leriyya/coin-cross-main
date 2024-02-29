@@ -1,0 +1,51 @@
+@import "globals/vars.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+.app-initialized * {
+  transition: 500ms;
+}
+
+body {
+  background-color: $background-grey;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+
+.hasOverlay,
+.hasOverlay body {
+  overflow: hidden;
+}
+
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: $dark-grey;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}

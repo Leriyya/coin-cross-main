@@ -1,0 +1,141 @@
+@import "globals/vars.scss";
+
+$root: ".success";
+
+#{$root} {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 80px 20px 80px 20px;
+  display: flex;
+  gap: 10px;
+
+  @media (max-width: 1200px) {
+    order: 9;
+  }
+
+  @media (max-width: 850px) {
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 20px 20px 20px;
+  }
+
+  &__img {
+    background-color: $background-grey;
+    border-radius: 24px;
+    height: max-content;
+
+    @media (max-width: 850px) {
+      display: flex;
+      justify-content: center;
+      background-color: #e8e8e8;
+    }
+  }
+
+  &__text--hidden {
+    display: none;
+  }
+
+  &__collapse-hidden {
+    display: none;
+  }
+
+  &__collapse-mob {
+    float: right;
+
+    @media (min-width: 850px) {
+      display: none;
+    }
+  }
+
+  &__collapse-desk {
+    @media (max-width: 850px) {
+      display: none;
+    }
+  }
+
+  &__collapse {
+    color: $primary-orange;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  &__collapse-mobile {
+    color: $primary-orange;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+
+    @media (max-width: 850px) {
+      display: none;
+    }
+  }
+
+  &__info {
+    @media (max-width: 850px) {
+      order: 2;
+    }
+  }
+
+  &__title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    color: $primary-black;
+    margin-bottom: 24px;
+
+    @media (max-width: 850px) {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $dark-grey;
+
+    @media (max-width: 850px) {
+      font-size: 14px;
+      line-height: 18px;
+      margin-top: 14px;
+    }
+  }
+
+  &__buttons {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+
+    @media (max-width: 850px) {
+      margin-top: 24px;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  &__signin {
+    border-radius: 12px;
+    background-color: $primary-orange;
+    color: white;
+    padding: 12px 24px;
+    border: 1px solid $primary-orange;
+    width: fit-content;
+
+    &:hover {
+      transition: background-color 0.1s ease;
+      background: linear-gradient(67.39deg, #ff4e4e -12.85%, #fca31b 47.54%);
+    }
+  }
+
+  &__more {
+    border-radius: 12px;
+    background-color: transparent;
+    color: $primary-orange;
+    padding: 12px 24px;
+    border: 1px solid $primary-orange;
+    width: fit-content;
+  }
+}

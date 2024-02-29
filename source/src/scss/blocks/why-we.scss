@@ -1,0 +1,110 @@
+@import "globals/vars.scss";
+
+$root: ".why";
+
+#{$root} {
+  padding-top: 90px;
+  padding-bottom: 80px;
+
+  @media (max-width: 1020px) {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    order: 4;
+  }
+
+  &__container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 48px;
+
+    @media (max-width: 1070px) {
+      gap: 15px;
+    }
+
+    @media (max-width: 1020px) {
+      flex-direction: column;
+    }
+  }
+
+  &__card-choose {
+    border-radius: 24px;
+    padding: 36px 32px;
+    margin-bottom: 16px;
+    background-color: $white;
+    width: 100%;
+
+    @media (max-width: 1020px) {
+      padding: 26px 25px;
+    }
+
+    @media (max-width: 700px) {
+      width: auto;
+    }
+  }
+
+  &__title {
+    color: $primary-black;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+
+    @media (max-width: 1020px) {
+      font-size: 32px;
+    }
+  }
+
+  &__cardsContainer {
+    margin-top: 64px;
+
+    @media (max-width: 1020px) {
+      margin-top: 24px;
+    }
+  }
+
+  &__img {
+    background-color: #f0f0f0;
+    border-radius: 24px;
+    margin-bottom: 48px;
+
+    img {
+      margin-bottom: -7px;
+    }
+
+    @media (max-width: 1130px) {
+      img {
+        width: 100%;
+      }
+    }
+    @media (max-width: 1020px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__image {
+    margin-bottom: 50px;
+
+    @media (max-width: 1020px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__card-title {
+    color: $primary-black;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__card-text {
+    font-size: 16px;
+    color: $dark-grey;
+
+    @media (max-width: 1020px) {
+      font-size: 14px;
+    }
+  }
+}
