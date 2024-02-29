@@ -23,6 +23,12 @@ $root: ".header";
 
       li {
         list-style: none;
+
+        & a:hover {
+          color: $primary-orange;
+          text-decoration: underline;
+          text-underline-offset: 8px;
+        }
       }
     }
 

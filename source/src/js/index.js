@@ -10,6 +10,8 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+//
+
 const successText = document.querySelector(".success__text");
 const successMoreButton = document.querySelector(".success__more");
 const successCollapseButtons = document.querySelectorAll(".success__collapse");
@@ -132,8 +134,4 @@ burgerButton.addEventListener("click", () => {
   } else {
     document.body.style.overflow = "hidden";
   }
-});
-
-closeButton.addEventListener("click", () => {
-  menuOverlay.classList.remove("active");
 });
