@@ -1,8 +1,16 @@
 
 
 @import "globals/main.scss";
+@import "globals/extensions";
 @import "vendor/swiper.scss";
 @import "vendor/normalize.scss";
+@import 'base/color';
+@import 'base/container';
+@import 'base/buttons';
+@import 'base/cards';
+@import 'base/title';
+@import 'base/flex';
+@import 'base/margin';
 
 @import "blocks/header.scss";
 @import "blocks/share.scss";
@@ -11,7 +19,6 @@
 @import "blocks/why-we.scss";
 @import "blocks/reserve.scss";
 @import "blocks/review.scss";
-@import "blocks/generation.scss";
 @import "blocks/partners.scss";
 @import "blocks/success.scss";
 @import "blocks/footer.scss";
@@ -20,3 +27,8 @@
 @import "blocks/video.scss";
 @import "blocks/questions.scss";
 @import "blocks/support.scss";
+
+@import "blocks/about-us/advantages.scss";
+
+@import "blocks/review/form.scss";
+@import "blocks/review/sites.scss";

@@ -9,16 +9,9 @@ $root: ".questions";
   width: 100%;
 
   &__title {
-    font-size: 52px;
-    font-weight: 700;
-    line-height: 64px;
-    color: $primary-black;
-    text-align: center;
     margin-bottom: 64px;
 
-    @media (max-width: 850px) {
-      font-size: 32px;
-      line-height: 40px;
+    @media #{$small-mobile-widths} {
       margin-bottom: 30px;
     }
   }
@@ -28,7 +21,7 @@ $root: ".questions";
     border-radius: 32px;
     padding: 24px 48px;
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       background-color: transparent;
       padding: 0;
     }
@@ -44,7 +37,7 @@ $root: ".questions";
       font-weight: 600;
     }
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       font-size: 12px;
     }
   }
@@ -66,11 +59,11 @@ $root: ".questions";
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: $primary-black;
+    color: $primary-content;
     margin-top: 35px;
     gap: 10px;
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       font-size: 14px;
       margin-top: 16px;
     }
@@ -85,7 +78,7 @@ $root: ".questions";
       border: none;
     }
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       padding-bottom: 16px;
     }
   }

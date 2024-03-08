@@ -7,30 +7,18 @@ $root: ".review";
   padding-bottom: 40px;
   background-color: $background-grey;
 
-  @media (max-width: 1020px) {
+  @media #{$mobile-widths} {
     padding-top: 20px;
     padding-bottom: 20px;
-    order: 6;
   }
 
   &__container {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 20px;
     display: flex;
     flex-direction: column;
   }
 
   &__title {
-    color: $primary-black;
-    font-size: 52px;
-    font-weight: 700;
-    text-align: center;
     margin-bottom: 40px;
-
-    @media (max-width: 1020px) {
-      font-size: 32px;
-    }
   }
 
   &__main-block {
@@ -42,7 +30,7 @@ $root: ".review";
       gap: 20px;
       align-items: center;
     }
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       order: 3;
       flex-direction: column;
     }
@@ -55,12 +43,12 @@ $root: ".review";
   }
 
   &__img {
-    background-color: $background-grey;
+    background-color: $background-card-grey;
     border-radius: 24px;
     height: max-content;
 
     img {
-      margin-bottom: -4px;
+      margin-bottom: -6px;
     }
 
     @media (max-width: 1130px) {
@@ -71,10 +59,7 @@ $root: ".review";
   }
 
   &__main-title {
-    font-size: 24px;
-    line-height: 38px;
-
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       font-size: 16px;
       line-height: 32px;
     }
@@ -84,7 +69,7 @@ $root: ".review";
     font-weight: 900;
     color: $primary-orange;
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       font-size: 24px;
     }
   }
@@ -98,7 +83,7 @@ $root: ".review";
     gap: 8px;
     font-size: 16px;
     line-height: 20px;
-    color: $dark-grey;
+    color: $secondary-content;
     margin-bottom: 10px;
     align-items: center;
   }
@@ -116,15 +101,12 @@ $root: ".review";
   }
 
   &__change-button {
-    margin-top: 32px;
-    border-radius: 12px;
-    background-color: $primary-orange;
-    color: white;
+    margin-top: 30px;
     padding: 12px 24px;
-    border: none;
     width: fit-content;
+    border-radius: 12px;
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       margin: 32px auto;
     }
   }
@@ -133,52 +115,20 @@ $root: ".review";
     display: flex;
     gap: 48px;
 
-    @media (max-width: 1020px) {
+    @media #{$mobile-widths} {
       gap: 20px;
     }
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       flex-direction: column;
     }
   }
 
-  &__single-card {
-    border-radius: 20px;
-    background-color: $white;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  &__single-card-top {
-    display: flex;
-    justify-content: space-between;
-    color: $tertiary-grey;
-  }
-
-  &__single-card-info {
-    color: $primary-black;
-  }
-
-  &__single-card-name {
-    color: $tertiary-grey;
-    font-size: 16px;
-  }
-
   &__open-reviews {
-    border-radius: 12px;
-    border: 1px solid $primary-orange;
-    background-color: transparent;
-    color: $primary-orange;
-    padding: 12px 24px;
-    width: fit-content;
     display: flex;
     margin: 0 auto;
     margin-top: 12px;
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       order: 2;
       margin: 32px auto;
     }

@@ -1,0 +1,284 @@
+.flex {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  &--v {
+    flex-direction: column;
+  }
+
+  &-gap {
+    &-row {
+      &-0 {
+        row-gap: 0;
+      }
+
+      &-1 {
+        row-gap: 8px;
+      }
+
+      &-2 {
+        row-gap: 16px;
+      }
+
+      &-3 {
+        row-gap: 24px;
+      }
+
+      &-4 {
+        row-gap: 32px;
+      }
+
+      &-5 {
+        row-gap: 40px;
+      }
+    }
+
+    &-col {
+      &-0 {
+        column-gap: 0;
+      }
+
+      &-1 {
+        column-gap: 8px;
+      }
+
+      &-2 {
+        column-gap: 16px;
+      }
+
+      &-3 {
+        column-gap: 24px;
+      }
+
+      &-4 {
+        column-gap: 32px;
+      }
+
+      &-5 {
+        column-gap: 40px;
+      }
+    }
+  }
+
+  &-grow {
+    &-2 {
+      flex-grow: 2;
+    }
+
+    &-3 {
+      flex-grow: 3;
+    }
+  }
+
+  &-jc-fs {
+    justify-content: flex-start;
+  }
+
+  &-jc-fe {
+    justify-content: flex-end;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ali-c {
+    align-items: center;
+  }
+}
+
+@media #{$tablet-widths} {
+    .flex-tab {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+
+        &--v {
+            flex-direction: column;
+        }
+
+        &-gap {
+            &-row {
+                &-0 {
+                    row-gap: 0;
+                }
+
+                &-1 {
+                    row-gap: 8px;
+                }
+
+                &-2 {
+                    row-gap: 16px;
+                }
+
+                &-3 {
+                    row-gap: 24px;
+                }
+
+                &-4 {
+                    row-gap: 32px;
+                }
+
+                &-5 {
+                    row-gap: 40px;
+                }
+            }
+
+            &-col {
+                &-0 {
+                    column-gap: 0;
+                }
+
+                &-1 {
+                    column-gap: 8px;
+                }
+
+                &-2 {
+                    column-gap: 16px;
+                }
+
+                &-3 {
+                    column-gap: 24px;
+                }
+
+                &-4 {
+                    column-gap: 32px;
+                }
+
+                &-5 {
+                    column-gap: 40px;
+                }
+            }
+        }
+
+        &-grow {
+            &-2 {
+                flex-grow: 2;
+            }
+
+            &-3 {
+                flex-grow: 3;
+            }
+        }
+
+        &-jc-fs {
+            justify-content: flex-start;
+        }
+
+        &-jc-fe {
+            justify-content: flex-end;
+        }
+
+        &-jc-sb {
+            justify-content: space-between;
+        }
+
+        &-jc-c {
+            justify-content: center;
+        }
+
+        &-ali-c {
+            align-items: center;
+        }
+    }
+}
+@media #{$mobile-widths} {
+    .flex-mob {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+
+        &--v {
+            flex-direction: column;
+        }
+
+        &-gap {
+            &-row {
+                &-0 {
+                    row-gap: 0;
+                }
+
+                &-1 {
+                    row-gap: 8px;
+                }
+
+                &-2 {
+                    row-gap: 16px;
+                }
+
+                &-3 {
+                    row-gap: 24px;
+                }
+
+                &-4 {
+                    row-gap: 32px;
+                }
+
+                &-5 {
+                    row-gap: 40px;
+                }
+            }
+
+            &-col {
+                &-0 {
+                    column-gap: 0;
+                }
+
+                &-1 {
+                    column-gap: 8px;
+                }
+
+                &-2 {
+                    column-gap: 16px;
+                }
+
+                &-3 {
+                    column-gap: 24px;
+                }
+
+                &-4 {
+                    column-gap: 32px;
+                }
+
+                &-5 {
+                    column-gap: 40px;
+                }
+            }
+        }
+
+        &-grow {
+            &-2 {
+                flex-grow: 2;
+            }
+
+            &-3 {
+                flex-grow: 3;
+            }
+        }
+
+        &-jc-fs {
+            justify-content: flex-start;
+        }
+
+        &-jc-fe {
+            justify-content: flex-end;
+        }
+
+        &-jc-sb {
+            justify-content: space-between;
+        }
+
+        &-jc-c {
+            justify-content: center;
+        }
+
+        &-ali-c {
+            align-items: center;
+        }
+    }
+}

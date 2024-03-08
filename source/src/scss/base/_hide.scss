@@ -1,0 +1,13 @@
+.hide{
+    display: none !important;
+    &-tab{
+        @media #{$tablet-widths} {
+            display: none !important;
+        }
+    }
+    &-mob{
+        @media #{$mobile-widths} {
+            display: none !important;
+        }
+    }
+}

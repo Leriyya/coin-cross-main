@@ -3,28 +3,23 @@
 $root: ".success";
 
 #{$root} {
-  max-width: 1180px;
   margin: 0 auto;
-  padding: 80px 20px 80px 20px;
+  padding: 80px 20px;
   display: flex;
   gap: 10px;
 
-  @media (max-width: 1200px) {
-    order: 9;
-  }
-
-  @media (max-width: 850px) {
+  @media #{$small-mobile-widths} {
     flex-direction: column;
     gap: 24px;
     padding: 40px 20px 20px 20px;
   }
 
   &__img {
-    background-color: $background-grey;
+    background-color: $background-card-light;
     border-radius: 24px;
     height: max-content;
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       display: flex;
       justify-content: center;
       background-color: #e8e8e8;
@@ -48,7 +43,7 @@ $root: ".success";
   }
 
   &__collapse-desk {
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       display: none;
     }
   }
@@ -67,27 +62,22 @@ $root: ".success";
     background-color: transparent;
     font-size: 16px;
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       display: none;
     }
   }
 
   &__info {
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       order: 2;
     }
   }
 
   &__title {
-    font-size: 52px;
-    font-weight: 700;
-    line-height: 64px;
-    color: $primary-black;
     margin-bottom: 24px;
+    text-align: left;
 
-    @media (max-width: 850px) {
-      font-size: 32px;
-      line-height: 40px;
+    @media #{$small-mobile-widths} {
       margin-bottom: 12px;
     }
   }
@@ -95,9 +85,9 @@ $root: ".success";
   &__text {
     font-size: 16px;
     line-height: 24px;
-    color: $dark-grey;
+    color: $secondary-content;
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       font-size: 14px;
       line-height: 18px;
       margin-top: 14px;
@@ -109,33 +99,25 @@ $root: ".success";
     display: flex;
     gap: 16px;
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       margin-top: 24px;
       flex-direction: column;
       gap: 12px;
     }
   }
 
+  &__more {
+    width: fit-content;
+  }
+
   &__signin {
     border-radius: 12px;
-    background-color: $primary-orange;
-    color: white;
     padding: 12px 24px;
-    border: 1px solid $primary-orange;
     width: fit-content;
 
     &:hover {
       transition: background-color 0.1s ease;
       background: linear-gradient(67.39deg, #ff4e4e -12.85%, #fca31b 47.54%);
     }
-  }
-
-  &__more {
-    border-radius: 12px;
-    background-color: transparent;
-    color: $primary-orange;
-    padding: 12px 24px;
-    border: 1px solid $primary-orange;
-    width: fit-content;
   }
 }

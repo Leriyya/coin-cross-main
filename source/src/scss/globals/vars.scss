@@ -1,15 +1,29 @@
 @use "sass:math";
 
+// colors
 $white: #ffffff;
-$primary-black: #16161c;
+$primary-content: #16161c;
+$secondary-content: #585858;
+$tertiary-content: #868686;
+$disabled-content: #d6d6d6;
 
 $dark-main: #26262c;
-$dark-grey: #585858;
-$tertiary-grey: #868686;
-$disabled-grey: #d6d6d6;
-$background-grey: #d8d8d8;
+
+$background-card-grey: #d8d8d8;
+$background-card-light: #e8e8e8;
 $background-grey: #f9f8f8;
 
 $primary-orange: #fe7f32;
 $gradient-orange: linear-gradient(58.74deg, #ff4e4e -10.52%, #fca31b 120.85%);
 $light-orange: #fff9f5;
+
+// breakpoints
+$tablet-widths: "(max-width: 1544px)";
+$mobile-widths: "(max-width: 1023px)";
+$small-mobile-widths: "(max-width: 850px)";
+$tablet-widths-px: 1544px;
+$mobile-widths-px: 1023px;
+
+$tablet: 1544px;
+$mobile: 1023px;
+$mobile-new: 767px;

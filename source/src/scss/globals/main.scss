@@ -41,11 +41,11 @@ button {
 }
 a {
   text-decoration: none;
-  color: $dark-grey;
+  color: $secondary-content;
   cursor: pointer;
 }
 
-.container {
+.main-page {
   display: flex;
   flex-direction: column;
 }

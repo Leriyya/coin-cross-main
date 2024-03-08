@@ -3,27 +3,16 @@
 $root: ".partners";
 
 #{$root} {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 60px 0px 120px 0px;
+  padding: 60px 20px 120px 20px;
 
-  @media (max-width: 1200px) {
-    margin: 0;
-    order: 8;
-  }
-  @media (max-width: 850px) {
+  @media #{$small-mobile-widths} {
     padding-bottom: 40px;
   }
 
   &__title {
-    color: $primary-black;
-    font-size: 52px;
-    font-weight: 700;
-    text-align: center;
     margin-bottom: 65px;
 
-    @media (max-width: 1020px) {
-      font-size: 32px;
+    @media #{$mobile-widths} {
       margin-bottom: 20px;
     }
   }
@@ -35,7 +24,7 @@ $root: ".partners";
     justify-content: space-between;
 
     & > img {
-      @media (max-width: 1020px) {
+      @media #{$mobile-widths} {
         width: 200px;
       }
     }

@@ -1,0 +1,119 @@
+@import "globals/vars.scss";
+
+$root: ".form";
+
+#{$root} {
+  display: flex;
+  gap: 48px;
+  padding-bottom: 60px;
+
+  @media #{$mobile-widths} {
+    padding-bottom: 45px;
+  }
+
+  @media #{$small-mobile-widths} {
+    flex-direction: column;
+    order: -1;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @media #{$tablet-widths} {
+      gap: 20px;
+      flex-direction: column;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+
+    @media #{$small-mobile-widths} {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+  }
+
+  &__point {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @media #{$small-mobile-widths} {
+      font-size: 12px;
+    }
+  }
+
+  &__stars > img {
+    @media #{$small-mobile-widths} {
+      height: 11px;
+    }
+  }
+
+  &__cards {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 25px 48px;
+
+    @media #{$tablet-widths} {
+      gap: 20px;
+    }
+    @media #{$small-mobile-widths} {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__write {
+    width: 90%;
+
+    @media #{$small-mobile-widths} {
+      width: 100%;
+      order: -1;
+    }
+  }
+
+  &__review {
+    margin-top: 24px;
+    padding: 24px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    & > label {
+      font-size: 12px;
+      line-height: 16px;
+      color: #868686;
+    }
+
+    & > input,
+    & > textarea {
+      background-color: $light-orange;
+      border: 1px solid #fe7f3226;
+      border-radius: 16px;
+      padding: 12px 24px;
+      width: 100%;
+    }
+  }
+
+  &__review-input {
+    height: 190px;
+  }
+
+  &__button {
+    padding: 13px;
+    border-radius: 12px;
+  }
+}

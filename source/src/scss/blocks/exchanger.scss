@@ -8,21 +8,13 @@ $root: ".exchanger";
   background-color: $background-grey;
   background: linear-gradient(to bottom, #f9f8f8 50%, #f0f0f0 50%);
 
-  @media (max-width: 700px) {
-    order: 1;
+  @media #{$mobile-widths} {
     padding-top: 25px;
     padding-bottom: 40px;
-  }
-
-  &__container {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 0 20px;
+    order: -2;
   }
 
   &__reserve {
-    display: flex;
-    align-items: center;
     gap: 5px;
   }
 
@@ -31,32 +23,24 @@ $root: ".exchanger";
       width: 142px;
     }
 
-    @media (max-width: 700px) {
+    @media #{$mobile-widths} {
       display: none;
     }
   }
 
   &__title {
-    font-size: 52px;
-    font-weight: 700;
-    color: $primary-black;
     margin-bottom: 20px;
-    text-align: center;
 
-    @media (max-width: 1020px) {
-      font-size: 32px;
-      line-height: 40px;
+    @media #{$mobile-widths} {
       margin-bottom: 15px;
     }
   }
 
-  &__subTitle {
-    font-size: 24px;
-    font-weight: 400;
+  &__sub-title {
     text-align: center;
-    color: $dark-grey;
+    color: $secondary-content;
 
-    @media (max-width: 1020px) {
+    @media #{$mobile-widths} {
       font-size: 16px;
     }
   }
@@ -64,7 +48,7 @@ $root: ".exchanger";
   &__icon {
     margin-top: 80px;
 
-    @media (max-width: 1020px) {
+    @media #{$mobile-widths} {
       margin-top: 14px;
     }
   }
@@ -78,23 +62,20 @@ $root: ".exchanger";
     flex-direction: column;
   }
 
-  &__formChange {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  &__form-change {
     width: 100%;
 
-    @media (max-width: 1020px) {
+    @media #{$mobile-widths} {
       flex-direction: column;
       gap: 10px;
     }
   }
 
-  &__formBottomInfo {
+  &__form-bottom-info {
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 1020px) {
+    @media #{$mobile-widths} {
       flex-direction: column;
     }
   }
@@ -103,24 +84,21 @@ $root: ".exchanger";
   &__recieve {
     width: 45%;
 
-    @media (max-width: 1020px) {
+    @media #{$mobile-widths} {
       width: 100%;
     }
   }
 
   &__name {
-    color: $dark-grey;
-    font-size: 24px;
-    font-weight: 400;
+    color: $secondary-content;
     margin-bottom: 24px;
   }
 
-  &__dropdownToggle {
+  &__dropdown-toggle {
     background-color: $light-orange;
     border: 1px solid #fe7f3226;
     border-radius: 16px;
     padding: 12px 24px;
-    font-size: 24px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -128,15 +106,13 @@ $root: ".exchanger";
     margin-bottom: 24px;
     cursor: pointer;
 
-    div {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    @media (max-width: 700px) {
+    @media #{$mobile-widths} {
       width: 100%;
     }
+  }
+
+  &__dropdown-name {
+    gap: 12px;
   }
 
   &__input {
@@ -144,85 +120,63 @@ $root: ".exchanger";
     border: 1px solid #fe7f3226;
     border-radius: 16px;
     padding: 12px 24px;
-    font-family: "Poppins", sans-serif;
-    font-size: 24px;
     width: 100%;
   }
 
-  &__formInfo {
+  &__form-info {
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
     width: 45%;
 
-    @media (max-width: 1070px) {
-      width: 50%;
-    }
-
-    @media (max-width: 1020px) {
+    @media #{$mobile-widths} {
       width: auto;
-    }
-
-    @media (max-width: 700px) {
+      width: 100%;
       flex-direction: column;
     }
   }
 
-  &__formCourse {
+  &__form-course {
     font-size: 14px;
     font-weight: 400;
-    color: $dark-grey;
+    color: $secondary-content;
     display: flex;
     flex-direction: column;
     gap: 6px;
   }
 
-  &__formSubInfo {
-    color: $tertiary-grey;
+  &__form-sub-info {
+    color: $tertiary-content;
     font-size: 14px;
     display: flex;
     flex-direction: column;
     gap: 6px;
   }
 
-  &__formTime {
-    display: flex;
-    align-items: center;
+  &__form-time {
     gap: 7px;
   }
 
-  &__formReserve {
-    display: flex;
-    align-items: center;
+  &__form-reserve {
     gap: 7px;
 
-    @media (max-width: 700px) {
+    @media #{$mobile-widths} {
       justify-content: space-between;
     }
+  }
 
-    button {
-      border: none;
-      background: transparent;
-      color: $primary-orange;
-    }
+  &__reserve-button {
+    border: none;
+    background: transparent;
+    color: $primary-orange;
   }
 
   &__continue {
     margin-top: 26px;
     width: 45%;
 
-    @media (max-width: 1020px) {
+    @media #{$mobile-widths} {
       width: auto;
-    }
-
-    button {
-      background-color: $primary-orange;
-      border: none;
-      color: $white;
-      font-size: 16px;
-      padding: 23px 0;
-      border-radius: 16px;
-      width: 100%;
     }
   }
 }
