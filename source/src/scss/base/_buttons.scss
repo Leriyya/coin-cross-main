@@ -2,7 +2,6 @@
   &-orange {
     color: $primary-orange;
     background-color: transparent;
-    font-size: 16px;
     border: 1px solid $primary-orange;
     border-radius: 12px;
     padding: 13px 24px;
@@ -12,10 +11,8 @@
     background-color: $primary-orange;
     border: none;
     color: $white;
-    font-size: 16px;
     padding: 23px 10px;
     border-radius: 16px;
     width: 100%;
   }
-  
 }

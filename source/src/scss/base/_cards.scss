@@ -19,13 +19,12 @@
       }
     }
 
-    &--info {
+    &__info {
       color: $primary-content;
     }
 
-    &--name {
+    &__name {
       color: $tertiary-content;
-      font-size: 16px;
     }
   }
 
@@ -68,7 +67,7 @@
       padding: 0;
     }
 
-    &-container {
+    &__container {
       color: $white;
       background-color: $primary-orange;
       border-radius: 48px;
@@ -83,9 +82,8 @@
       }
     }
 
-    &-title {
+    &__title {
       margin-bottom: 10px;
-      text-align: left !important;
       color: $white !important;
 
       @media #{$small-mobile-widths} {
@@ -93,7 +91,7 @@
       }
     }
 
-    &-text {
+    &__text {
       @media #{$small-mobile-widths} {
         text-align: center;
         font-size: 14px;
@@ -101,12 +99,7 @@
       }
     }
 
-    &-subtext {
-      font-weight: 700;
-    }
-
-    &-info {
-      font-size: 16px;
+    &__info {
       margin-bottom: 16px;
 
       @media #{$small-mobile-widths} {
@@ -114,7 +107,7 @@
       }
     }
 
-    &-buttons {
+    &__buttons {
       display: flex;
       gap: 16px;
 
@@ -123,7 +116,7 @@
       }
     }
 
-    &-button-more {
+    &__button-more {
       background-color: $primary-content;
       color: $white;
       border: 1px solid $primary-content;
@@ -135,7 +128,7 @@
       }
     }
 
-    &-button-tg {
+    &__button-tg {
       background-color: transparent;
       color: $primary-content;
       border: 1px solid $primary-content;
@@ -163,7 +156,7 @@
       width: auto;
     }
 
-    &--img {
+    &__img {
       margin-bottom: 40px;
 
       @media #{$mobile-widths} {
@@ -171,14 +164,13 @@
       }
     }
 
-    &--title {
+    &__title {
       color: $primary-content;
       font-size: 24px;
       margin-bottom: 16px;
     }
 
-    &--text {
-      font-size: 16px;
+    &__text {
       color: $secondary-content;
 
       @media #{$mobile-widths} {

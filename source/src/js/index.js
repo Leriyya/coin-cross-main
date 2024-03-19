@@ -86,19 +86,19 @@ function createTransactionHTML(transaction) {
   return `
       <div class="transactions__transaction">
         <div class="transactions__change">
-          <div class="transactions__coinContainer">
+          <div class="transactions__coin-container">
             <img src="${transaction.coin1.image}" alt="coin" class="transactions__coin" />
             <div>
-              <div class="transactions__coinName">${transaction.coin1.name}</div>
-              <div class="transactions__coinPrice">${transaction.coin1.price}</div>
+              <div class="transactions__coin-name">${transaction.coin1.name}</div>
+              <div class="transactions__coin-price">${transaction.coin1.price}</div>
             </div>
           </div>
           <div><img src="./i/change-black.svg" alt="" /></div>
-          <div class="transactions__coinContainer">
+          <div class="transactions__coin-container">
             <img src="${transaction.coin2.image}" alt="coin" class="transactions__coin" />
             <div>
-              <div class="transactions__coinName">${transaction.coin2.name}</div>
-              <div class="transactions__coinPrice">${transaction.coin2.price}</div>
+              <div class="transactions__coin-name">${transaction.coin2.name}</div>
+              <div class="transactions__coin-price">${transaction.coin2.price}</div>
             </div>
           </div>
         </div>

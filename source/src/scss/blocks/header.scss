@@ -1,5 +1,3 @@
-@import "globals/vars.scss";
-
 $root: ".header";
 
 #{$root} {
@@ -27,7 +25,6 @@ $root: ".header";
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: calc(100dvh - 90px);
       transition: transform 0.3 ease;
     }
   }
@@ -73,6 +70,9 @@ $root: ".header";
 
   &__menu-overlay.active {
     display: flex;
+    flex-direction: column;
+    height: calc(100dvh - 90px);
+    justify-content: space-between;
   }
 
   &__menu-overlay.active .header__burger img {
@@ -86,7 +86,6 @@ $root: ".header";
   &__ul {
     display: flex;
     gap: 44px;
-    font-size: 16px;
 
     @media #{$mobile-widths} {
       display: block;
@@ -96,11 +95,9 @@ $root: ".header";
       list-style: none;
 
       @media #{$mobile-widths} {
-        font-size: 16px;
         line-height: 24px;
         color: $secondary-content;
         border-bottom: 1px solid #f0f0f0;
-        padding-bottom: 16px;
         padding: 16px 20px;
       }
 
@@ -116,7 +113,6 @@ $root: ".header";
     display: none;
 
     @media #{$mobile-widths} {
-      font-size: 16px;
       line-height: 24px;
       display: flex;
       flex-direction: column;

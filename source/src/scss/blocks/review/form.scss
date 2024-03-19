@@ -1,5 +1,3 @@
-@import "globals/vars.scss";
-
 $root: ".form";
 
 #{$root} {
@@ -28,7 +26,6 @@ $root: ".form";
   }
   &__title {
     font-size: 24px;
-    font-weight: 600;
     line-height: 32px;
 
     @media #{$small-mobile-widths} {
@@ -64,12 +61,12 @@ $root: ".form";
       gap: 20px;
     }
     @media #{$small-mobile-widths} {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: 1fr;
     }
   }
 
   &__write {
-    width: 90%;
+    width: 100%;
 
     @media #{$small-mobile-widths} {
       width: 100%;
@@ -101,15 +98,12 @@ $root: ".form";
     & > input,
     & > textarea {
       background-color: $light-orange;
-      border: 1px solid #fe7f3226;
+      border: 1px solid $border-orange;
       border-radius: 16px;
       padding: 12px 24px;
       width: 100%;
+      resize: none;
     }
-  }
-
-  &__review-input {
-    height: 190px;
   }
 
   &__button {

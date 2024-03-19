@@ -1,5 +1,3 @@
-@import "globals/vars.scss";
-
 $root: ".advantages";
 
 #{$root} {
@@ -26,7 +24,6 @@ $root: ".advantages";
 
   &__title {
     font-size: 32px;
-    font-weight: 600;
 
     @media #{$small-mobile-widths} {
       font-size: 24px;
@@ -74,7 +71,7 @@ $root: ".advantages";
   }
 
   &__img {
-    margin-bottom: -7px;
+    display: flex;
 
     & > img {
       @media #{$mobile-widths} {
