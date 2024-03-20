@@ -1,0 +1,82 @@
+$root: ".advantages";
+
+#{$root} {
+  &__cards {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 48px;
+
+    @media #{$tablet-widths} {
+      gap: 36px;
+    }
+
+    @media #{$mobile-widths} {
+      gap: 20px;
+    }
+
+    @media #{$small-mobile-widths} {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+
+    @media #{$small-mobile-widths} {
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+
+  &__main {
+    grid-column: span 3;
+    display: flex;
+    padding-block: 0;
+    justify-content: space-between;
+    grid-row: span 2;
+    margin-bottom: 0;
+
+    @media #{$small-mobile-widths} {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__maintext {
+    @media #{$mobile-widths} {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    @media #{$small-mobile-widths} {
+      font-size: 24px;
+    }
+  }
+
+  &__subtext {
+    @media #{$mobile-widths} {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    @media #{$mobile-widths} {
+      font-size: 14px;
+    }
+  }
+
+  &__info {
+    padding-top: 36px;
+  }
+
+  &__img {
+    display: flex;
+
+    & > img {
+      @media #{$mobile-widths} {
+        width: 281px;
+      }
+    }
+  }
+}

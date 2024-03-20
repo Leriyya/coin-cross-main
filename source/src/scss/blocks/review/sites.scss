@@ -1,0 +1,79 @@
+$root: ".sites";
+
+#{$root} {
+  padding-top: 60px;
+
+  @media #{$mobile-widths} {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 32px;
+
+    @media #{$small-mobile-widths} {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 48px;
+    margin-top: 24px;
+
+    @media #{$mobile-widths} {
+      gap: 30px;
+    }
+    @media #{$small-mobile-widths} {
+      gap: 20px;
+      flex-direction: column;
+    }
+  }
+
+  &__card {
+    background-color: $white;
+    padding-bottom: 42px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+    width: 100%;
+    box-shadow: 0px 4px 20px 0px #4a4a4a12;
+    padding-block: 26px;
+
+    @media #{$small-mobile-widths} {
+      padding-bottom: 32px;
+      padding-block: 36px;
+    }
+  }
+
+  &__card-link {
+    line-height: 22px;
+    color: $primary-orange;
+
+    @media #{$small-mobile-widths} {
+      font-size: 12px;
+    }
+  }
+
+  &__card-img {
+    width: 160px;
+
+    &-2 {
+      width: 225px;
+    }
+    &-3 {
+      width: 225px;
+
+      @media #{$small-mobile-widths} {
+        width: 200px;
+      }
+    }
+  }
+}

@@ -1,50 +1,39 @@
-@import "globals/vars.scss";
-
 $root: ".footer";
 
 #{$root} {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 100px 20px 35px 20px;
+  padding-inline: 20px;
+  padding-top: 100px;
+  padding-bottom: 35px;
   width: 100%;
 
-  @media (max-width: 850px) {
-    padding: 40px 20px 35px 20px;
+  @media #{$small-mobile-widths} {
+    padding-top: 50px;
   }
 
   &__container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas: "about sections contact";
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
       gap: 32px 10px;
-      grid-template-areas:
-        "about about"
-        "sections contact"
-        "sections contact";
     }
   }
 
   &__about {
     color: #00000099;
-    font-size: 16px;
     line-height: 24px;
 
-    grid-area: about;
-
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       display: flex;
       flex-direction: column;
+      grid-column: span 2;
     }
   }
 
   &__about img {
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       width: 172px;
     }
   }
@@ -59,26 +48,21 @@ $root: ".footer";
     order: 2;
     opacity: 0.6;
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       padding-top: 16px;
       opacity: 1;
     }
   }
 
   &__sections {
-    font-size: 16px;
-    font-weight: 400;
-    color: $dark-grey;
+    color: $secondary-content;
     display: flex;
     flex-direction: column;
     gap: 15px;
-
-    grid-area: sections;
   }
 
   &__sections-title {
-    font-weight: 500;
-    color: $primary-black;
+    color: $primary-content;
     margin-bottom: 25px;
   }
 
@@ -86,22 +70,15 @@ $root: ".footer";
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    grid-area: contact;
-  }
-
-  &__contact-title {
-    font-weight: 500;
   }
 
   &__contact-list {
-    font-size: 16px;
     line-height: 24px;
     display: flex;
     flex-direction: column;
     gap: 16px;
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       font-size: 12px;
     }
   }
@@ -114,7 +91,7 @@ $root: ".footer";
   }
 
   &__contact-info {
-    color: $tertiary-grey;
+    color: $tertiary-content;
     font-size: 12px;
     line-height: 18px;
     max-width: 300px;
@@ -125,13 +102,13 @@ $root: ".footer";
     margin-top: 27px;
     justify-content: space-between;
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       flex-direction: column;
     }
   }
 
   &__info {
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       order: 1;
     }
   }
@@ -142,7 +119,7 @@ $root: ".footer";
     background-color: #fe80325c;
     margin-top: 27px;
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       display: none;
     }
   }
@@ -162,7 +139,7 @@ $root: ".footer";
   &__rules {
     color: $primary-orange;
 
-    @media (max-width: 850px) {
+    @media #{$small-mobile-widths} {
       order: 3;
     }
   }

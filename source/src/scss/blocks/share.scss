@@ -1,12 +1,10 @@
-@import "globals/vars.scss";
-
 $root: ".share";
 
 #{$root} {
   padding-top: 44px;
   background-color: $background-grey;
 
-  @media (max-width: 1000px) {
+  @media #{$mobile-widths} {
     display: none;
   }
 
@@ -22,32 +20,24 @@ $root: ".share";
     justify-content: space-between;
     gap: 35px;
 
-    @media (max-width: 1130px) {
+    @media #{$mobile-widths} {
+      width: 509px;
+      margin: auto;
       gap: 10px;
     }
 
-    @media (max-width: 1000px) {
-      width: 509px;
-      margin: auto;
-      height: 164px;
-    }
-
-    @media (max-width: 700px) {
+    @media #{$small-mobile-widths} {
       width: 300px;
       height: 100px;
     }
   }
 
   &__image {
-    @media (max-width: 1130px) {
-      width: 100%;
-    }
-
-    @media (max-width: 1000px) {
+    @media #{$mobile-widths} {
       width: 244px;
     }
 
-    @media (max-width: 700px) {
+    @media #{$small-mobile-widths} {
       width: 100px;
     }
   }
@@ -58,7 +48,6 @@ $root: ".share";
 
   &__subText {
     color: $primary-orange;
-    font-size: 16px;
     font-style: italic;
   }
 
@@ -70,7 +59,7 @@ $root: ".share";
     justify-content: space-evenly;
     gap: 48px;
 
-    @media (max-width: 1130px) {
+    @media #{$mobile-widths} {
       gap: 20px;
     }
   }
@@ -84,7 +73,7 @@ $root: ".share";
 
 .slider {
   padding-top: 25px;
-  order: 2;
+  order: -1;
   @media (min-width: 1000px) {
     display: none;
   }

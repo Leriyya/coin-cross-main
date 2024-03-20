@@ -1,0 +1,128 @@
+$root: ".instruction";
+
+#{$root} {
+  padding: 40px 20px 30px;
+
+  @media #{$small-mobile-widths} {
+    padding-bottom: 30px;
+  }
+
+  &__card {
+    background-color: $white;
+    padding: 32px;
+    border-radius: 24px;
+
+    @media (max-width: 1150px) {
+      padding: 20px;
+      height: 100%;
+    }
+
+    @media #{$small-mobile-widths} {
+      padding: 16px;
+      height: 185px;
+    }
+  }
+
+  &__card-number {
+    width: 60px;
+    height: 60px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background-color: $primary-orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-size: 24px;
+    margin-bottom: 24px;
+
+    @media (max-width: 1150px) {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 18px;
+    }
+
+    @media #{$small-mobile-widths} {
+      width: 28px;
+      height: 28px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__card-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: $primary-content;
+    margin-bottom: 16px;
+
+    @media (max-width: 1150px) {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    @media #{$small-mobile-widths} {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__card-text {
+    color: $secondary-content;
+
+    @media (max-width: 1150px) {
+      font-size: 12px;
+    }
+  }
+
+  &__container {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 32px 48px;
+    grid-auto-flow: row;
+
+    @media (max-width: 1150px) {
+      gap: 15px 20px;
+    }
+    @media #{$small-mobile-widths} {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__currency {
+    grid-column: span 2;
+    padding-bottom: 35px;
+
+    @media #{$small-mobile-widths} {
+      padding-bottom: 16px;
+    }
+  }
+
+  &__data {
+    grid-column: span 2;
+  }
+  &__approve {
+    grid-column: span 2;
+  }
+
+  &__pay {
+    grid-column: span 3;
+    height: 100%;
+
+    @media #{$small-mobile-widths} {
+      padding: 16px;
+    }
+  }
+
+  &__exchange {
+    grid-column: span 3;
+    height: 100%;
+
+    @media #{$small-mobile-widths} {
+      padding: 16px;
+    }
+  }
+}
